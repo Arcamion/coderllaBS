@@ -40,6 +40,28 @@ a{
 }
 
 
+/* ------- Default ------- */
+
+.pt-80{
+    padding-top: 80px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+.pb-120{
+    padding-bottom: 120px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
 /* ----- Sección de animaciones ----- */
 
 @keyframes video{
@@ -132,10 +154,14 @@ a{
     opacity: 1;
 }
 
-h1{
+h1, h3{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     color: black;
+}
+
+h3{
+    font-size: 28px;
 }
 
 p{
@@ -328,4 +354,118 @@ span{
     background: transparent;
     font-size: 40px;
     right: 12%;
+}
+
+/* ----- sección estadísticas ----- */
+
+.stats-section .single-stat{
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 17px 0 rgb(154 154 154 / 55%);
+}
+
+.stats-section .single-stat .icon{
+    position: relative;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    margin: 0 auto 30px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.stats-section .single-stat .icon.color-2{
+    background-color: #FFF1A1;
+}
+
+.stats-section .single-stat .icon.color-3{
+    background-color: #4CE7FF;
+}
+
+.stats-section .single-stat .icon::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: inherit;
+    top: -8px;
+    right: -8px;
+    z-index: -1;
+    opacity: .5;
+    transition: all .3s ease-out 0s;
+}
+
+.stats-section .single-stat:hover .icon::after{
+    top: 8px;
+    right: 9px;
+}
+.stats-section .single-stat .content h3{
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+
+/* ----- hl pag inicio css ----- */
+
+
+.hl-area{
+    overflow: hidden;
+}
+
+.hl-image{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hl-image .hl-shape{
+    position: absolute;
+    top: 70px;
+    left:40px;
+    width: 394px;
+    height: 394px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+
+.hl-image .hl-shape::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: scale(1.1) rotate(25deg);
+}
+
+.hl-image .app{
+    margin-top: 70px;
+    left: 25px;
+    transform: rotate(-25deg) translateY(-22%);
+}
+
+.title{
+    margin-top: 130px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.text{
+    margin-top: 20px;
+}
+
+.hl-content .main-btn{
+    margin-top: 40px;
 }
