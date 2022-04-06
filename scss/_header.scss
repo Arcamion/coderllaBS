@@ -1,0 +1,58 @@
+header{
+    .navbar-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9;
+        .navbar-brand{
+            img{
+                max-width: 150px;
+                max-height: 50px;
+            }
+        }
+        .navbar-toggler{
+            color: transparent;
+            border-color: transparent
+        }
+        .navbar-nav{
+            .nav-item{
+                position: relative;
+                margin-left: 40px;
+                .nav-link{
+                    position: relative;
+                    padding: 10px 0;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: black;
+                    &:hover{
+                        color: black;
+                    }
+                    &:active{
+                        color: black;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        width: 8px;
+                        height: 8px;
+                        bottom: 0;
+                        left: 50%;
+                        border-radius: 50%;
+                        background-color: black;
+                        opacity: 0;
+                        transition: all .3 ease-out 0s
+                    }
+                    &:hover::before{
+                        opacity: 1;
+                    }
+                }
+                .nav-link.active{
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+            }
+        } 
+    }
+}        
