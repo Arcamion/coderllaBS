@@ -1,3 +1,19 @@
-$main-color:#ff702a;
-$text-color:#fff;
-$bg-color:#1e1c2a;
+@mixin shapes(){
+    border-radius: 50%;
+    animation: animation-1 2s linear infinite;
+}
+@mixin footershapes(){
+    border-radius: 50%;
+    opacity: .55;
+    animation: animation-1 2s linear infinite;
+}
+
+$pallet:(
+    'primary': #FF6C00,
+    'secondary': #FF8B00,
+    'tan': #FFF1A1,
+    'primaryAlt': #4CE7FF,
+    'secondaryAlt': #00CCFF,
+    'primaryDark': #E75219,
+    'coral': #ffa67a,
+);

@@ -1,0 +1,21 @@
+.bg-oscuro{
+    color: black;
+}
+.bg-derrota{
+    display: inline-block;
+    margin-left: 18px;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+    background-color: #ff2525;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+.bg-victoria{
+    @extend .bg-derrota;
+    background-color: #2ff75a;
+}

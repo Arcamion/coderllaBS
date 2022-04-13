@@ -1,0 +1,20 @@
+.faq-section{
+    .accordion-item{
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px rgba(142, 142, 142, .16);
+        button{
+            position: relative;
+            padding: 18px 25px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: left;
+            background-color: #fff;
+            color: map-get($map: $pallet, $key:'primaryDark');
+        }
+    }
+    .accordion-button:not(.collapsed)::after{
+        background-image: url(../imagenes/accordion.svg);
+    }
+}

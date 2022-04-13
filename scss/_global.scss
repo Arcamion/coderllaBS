@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    color: map-get($map: $pallet, $key:'primaryDark');
+    overflow-x: hidden;
+}
+img{
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+h1, h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+h2{
+    font-weight: 700;
+    color: black;
+}
+
+h3{
+    font-size: 28px;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: black;
+    margin: 0;
+}
+
+span{
+    display: contents;
+    color: map-get($map: $pallet, $key:'secondary');
+}
+
+.title{
+    margin-top: 130px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.text{
+    margin-top: 20px;
+}
+
+.dark{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    background-color: map-get($map: $pallet, $key:'tan');
+}
+
+.main-btn{
+    display: inline-block;
+    margin-top: 8px;
+    background-color: map-get($map: $pallet, $key:'primary');
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.main-btn:hover{
+    transform: scale(1.1) translateY(5px);
+    transition: .4s;
+    color: #fff;
+}
+
+.sticky{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.5);
+}
+.pt-80{
+    padding-top: 80px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+.pt-120{
+    padding-top: 120px;
+}
+
+.pt-150{
+    padding-top: 150px;
+}
+
+.pt-180{
+    padding-top: 180px;
+}
+.pb-120{
+    padding-bottom: 120px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mb-60{
+    margin-bottom: 60px;
+}
+
+.mt-50{
+    margin-top: 50px;
+}
+
+.ml-60{
+    margin-left: 860px;
+}
+
+@keyframes video{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+
+@keyframes bounceTop-1{
+    0%,100%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes animation-1{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+    .footer-link {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px),
+(max-width: 767px) {
+    .footer-contact {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) , (max-width:767px){
+    .navbar-collapse{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 5px 12px;
+        background-color: #fff;
+        box-shadow: 0 15px 20px 0 rgb(0, 0, 0 / 10%);
+    }
+
+    .navbar-nav .nav-item .nav-link::before{
+        position: relative;
+    }
+
+    .header-title span{
+        color: black;
+    }
+
+    .header-image img{
+        height: 300px;
+    }
+    .header-hero-content{
+        margin-top: 20%;
+    }
+
+    .stats-section .single-stat{
+        box-shadow: none;
+    }
+
+    .hl-image .hl-shape{
+        width: 380px;
+        height: 380px;
+    }
+
+    .hl-image .app{
+        margin-left: 50px;
+        margin-top: 90px;
+    }
+
+    .footer-link{
+        padding-top: 10px;
+    }
+
+    .footer-contact{
+        padding-top: 10px;
+    }
+    .footer-area .text{
+        margin-top: 40px;
+    }
+}
+
+

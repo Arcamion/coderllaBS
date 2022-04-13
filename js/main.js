@@ -18,3 +18,12 @@ $(function() {
         controlsText: ['<i class="fa-solid fa-angle-left prev"></i>', '<i class="fa-solid fa-angle-right next"></i>'],
       });
 });
+window.addEventListener("scroll",() =>{
+    let navBar=document.getElementById("navBarId");
+    if(window.scrollY >= 10){
+        navBar.classList.add("navBarScroll");
+    } else{
+        navBar.classList.remove("navBarScroll");
+    }
+    console.log(window.scrollY);   
+})

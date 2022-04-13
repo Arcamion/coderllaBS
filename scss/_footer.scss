@@ -1,0 +1,124 @@
+.footer-area { 
+    position: relative;
+    overflow: hidden;
+    .footer-shape {
+    position: absolute;
+    }
+        .footer-shape.shape-1 {
+            width: 75px;
+            height: 75px;
+            left: 70px;
+            background-color: map-get($map: $pallet, $key:'coral');
+            @include footershapes();
+        }
+        .footer-shape.shape-2 {
+            width: 39px;
+            height: 39px;
+            left: 15%;
+            bottom: 40px;
+            background-color: map-get($map: $pallet, $key:'secondaryAlt');
+            @include footershapes();
+        }
+        .footer-shape.shape-3 {
+            width: 20px;
+            height: 20px;
+            left: 35%;
+            top: 40px;
+            background-color: map-get($map: $pallet, $key:'primaryDark');
+            @include footershapes();
+        }
+        .footer-shape.shape-4 {
+            width: 15px;
+            height: 15px;
+            left: 50%;
+            bottom: 5px;
+            background-color: #fe5f59;
+            @include footershapes();
+        }
+        .footer-shape.shape-5 {
+            width: 39px;
+            height: 39px;
+            right: 37%;
+            top: 0px;
+            background-color: #1e1c2a;
+            @include footershapes();
+        }
+        .footer-shape.shape-6 {
+            width: 15px;
+            height: 15px;
+            right: 15%;
+            top: 125px;
+            background-color: map-get($map: $pallet, $key:'secondary');
+            @include footershapes();
+        }
+    
+    .logo{
+        max-width: 200px;
+    }
+    .footer-about {
+        max-width: 320px;
+        .text {
+            margin-top: 30px;
+        }
+        .social {
+            margin-top: 30px;
+            li {
+                display: inline-block;
+                margin-right: 25px;
+                a {
+                    font-size: 20px;
+                    color: #595a5c;
+                    transition: all .3s ease-out 0s;
+                    &:hover {
+                        color: map-get($map: $pallet, $key:'primary');
+                    }
+                }
+            }
+        }
+    }
+    .footer-link{
+        .footer-link-wrapper {
+            width: 50%;
+            .link {
+                padding-top: 10px;
+                li {
+                    margin-top: 10px;
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        color: #747e88;
+                        transition: all .3s ease-out 0s;
+                        &:hover {
+                            color: map-get($map: $pallet, $key:'primary');
+                        }
+                    }
+                }
+            }
+            .footer-title{
+                .title {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+            }
+        }        
+    }
+    .footer-contact{
+        a {
+            color: #747e88;
+            transition: all .3s ease-out 0s;
+            &:hover {
+                color: map-get($map: $pallet, $key:'primary');
+            }
+        }
+    }
+    .footer-copyright{
+        .copyright {
+            border-top: 2px solid #747e88;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            a {
+                color: #5f5f5f;
+            }
+        }
+    }
+}

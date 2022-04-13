@@ -1,0 +1,49 @@
+.stats-section{
+     //consultar acá si hay que hacer como header de poner section ya que cuando arranco con section{ no me da los efectos
+    .single-stat{
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 15px 17px 0 rgba(91, 94, 96, 1);
+        &:hover .icon::after{
+            top: 8px;
+            right: 9px;
+        }
+        .icon.color-2{
+            background-color: map-get($map: $pallet, $key:'tan');
+        }
+        .icon.color-3{
+            background-color: map-get($map: $pallet, $key:'primaryAlt');
+        }
+        .icon{
+            position: relative;
+            width: 75px;
+            height: 75px;
+            display: flex;
+            margin: 0 auto 30px;
+            background-color: map-get($map: $pallet, $key:'primary');
+            color: #fff;
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: inherit;
+                border-radius: inherit;
+                top: -8px;
+                right: -8px;
+                z-index: -1;
+                opacity: .5;
+                transition: all .3s ease-out 0s;
+            }
+        }
+         .content h3{  //preguntarle a jean si va .content y abajo h3 o si asi está bien
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+    }
+}
